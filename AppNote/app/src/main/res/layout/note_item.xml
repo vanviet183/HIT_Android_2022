@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:weightSum="10"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/one_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_item"
+        android:padding="10dp"
+    >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="9">
+            <TextView
+                android:id="@+id/title_note"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="7h thuc day"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"
+                >
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:text="Sang som thuc day toi danh rang va goi dau, toi man me mot hoi lau roi buoc chan ra khoi cua, di an sang lam bat pho de cho co nguc no no"
+                android:textSize="18dp"
+                android:textStyle="italic"
+
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:layout_weight="0.2"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/erase"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_weight="0.2"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            >
+
+        </ImageView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

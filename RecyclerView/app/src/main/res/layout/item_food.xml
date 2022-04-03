@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/food_img"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/img1"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/food_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food 1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/food_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Very good"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/food_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="500$"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_700"
+                android:layout_marginTop="3dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
